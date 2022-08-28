@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  SnapVC.swift
 //  BasicSnapchatClone
 //
-//  Created by ILKER on 28.08.2022.
+//  Created by ILKER on 29.08.2022.
 //
 
 import UIKit
 
-class SignInVC: UIViewController {
+class SnapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-
