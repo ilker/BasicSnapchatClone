@@ -31,6 +31,10 @@
 		52819FE228BC160B006E0DB0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FE128BC160B006E0DB0 /* ProfileVC.swift */; };
 		52819FE628BC194F006E0DB0 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FE528BC194F006E0DB0 /* SnapVC.swift */; };
 		52BDFC6028BCC66600955361 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDFC5F28BCC66600955361 /* UserSingleton.swift */; };
+		52F57BCF28BD3462000D0DA5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F57BCE28BD3462000D0DA5 /* FeedCell.swift */; };
+		52F57BD128BD367D000D0DA5 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F57BD028BD367D000D0DA5 /* Snap.swift */; };
+		52F57BD428BD3A72000D0DA5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 52F57BD328BD3A72000D0DA5 /* SDWebImage */; };
+		52F57BD628BD3A72000D0DA5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52F57BD528BD3A72000D0DA5 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,8 @@
 		52819FE128BC160B006E0DB0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		52819FE528BC194F006E0DB0 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 		52BDFC5F28BCC66600955361 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
+		52F57BCE28BD3462000D0DA5 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		52F57BD028BD367D000D0DA5 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,12 @@
 			files = (
 				52819FD828BC0C72006E0DB0 /* FirebaseStorageCombine-Community in Frameworks */,
 				52819FC828BC0C72006E0DB0 /* FirebaseAnalyticsSwift in Frameworks */,
+				52F57BD628BD3A72000D0DA5 /* SDWebImageMapKit in Frameworks */,
 				52819FD228BC0C72006E0DB0 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				52819FCE28BC0C72006E0DB0 /* FirebaseAuthCombine-Community in Frameworks */,
 				52819FD628BC0C72006E0DB0 /* FirebaseStorage in Frameworks */,
 				52819FCC28BC0C72006E0DB0 /* FirebaseAuth in Frameworks */,
+				52F57BD428BD3A72000D0DA5 /* SDWebImage in Frameworks */,
 				52819FC428BC0C72006E0DB0 /* FirebaseAnalytics in Frameworks */,
 				52819FC628BC0C72006E0DB0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				52819FCA28BC0C72006E0DB0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
@@ -113,6 +121,7 @@
 				52819FDF28BC15F8006E0DB0 /* UploadVC.swift */,
 				52819FE128BC160B006E0DB0 /* ProfileVC.swift */,
 				52819FE528BC194F006E0DB0 /* SnapVC.swift */,
+				52F57BCE28BD3462000D0DA5 /* FeedCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -130,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				52BDFC5F28BCC66600955361 /* UserSingleton.swift */,
+				52F57BD028BD367D000D0DA5 /* Snap.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +172,8 @@
 				52819FD328BC0C72006E0DB0 /* FirebaseFirestoreSwift */,
 				52819FD528BC0C72006E0DB0 /* FirebaseStorage */,
 				52819FD728BC0C72006E0DB0 /* FirebaseStorageCombine-Community */,
+				52F57BD328BD3A72000D0DA5 /* SDWebImage */,
+				52F57BD528BD3A72000D0DA5 /* SDWebImageMapKit */,
 			);
 			productName = BasicSnapchatClone;
 			productReference = 52819FA928BC0A7C006E0DB0 /* BasicSnapchatClone.app */;
@@ -193,6 +205,7 @@
 			mainGroup = 52819FA028BC0A7C006E0DB0;
 			packageReferences = (
 				52819FC228BC0C72006E0DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				52F57BD228BD3A72000D0DA5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 52819FAA28BC0A7C006E0DB0 /* Products */;
 			projectDirPath = "";
@@ -223,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52819FDC28BC10D0006E0DB0 /* SignUpVC.swift in Sources */,
+				52F57BCF28BD3462000D0DA5 /* FeedCell.swift in Sources */,
 				52819FE028BC15F8006E0DB0 /* UploadVC.swift in Sources */,
 				52BDFC6028BCC66600955361 /* UserSingleton.swift in Sources */,
 				52819FE628BC194F006E0DB0 /* SnapVC.swift in Sources */,
@@ -230,6 +244,7 @@
 				52819FB128BC0A7C006E0DB0 /* SignInVC.swift in Sources */,
 				52819FDE28BC15EA006E0DB0 /* FeedVC.swift in Sources */,
 				52819FAD28BC0A7C006E0DB0 /* AppDelegate.swift in Sources */,
+				52F57BD128BD367D000D0DA5 /* Snap.swift in Sources */,
 				52819FAF28BC0A7C006E0DB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +475,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		52F57BD228BD3A72000D0DA5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -517,6 +540,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52819FC228BC0C72006E0DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		52F57BD328BD3A72000D0DA5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F57BD228BD3A72000D0DA5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		52F57BD528BD3A72000D0DA5 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F57BD228BD3A72000D0DA5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
