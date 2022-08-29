@@ -30,6 +30,7 @@
 		52819FE028BC15F8006E0DB0 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FDF28BC15F8006E0DB0 /* UploadVC.swift */; };
 		52819FE228BC160B006E0DB0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FE128BC160B006E0DB0 /* ProfileVC.swift */; };
 		52819FE628BC194F006E0DB0 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FE528BC194F006E0DB0 /* SnapVC.swift */; };
+		52BDFC6028BCC66600955361 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDFC5F28BCC66600955361 /* UserSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		52819FDF28BC15F8006E0DB0 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		52819FE128BC160B006E0DB0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		52819FE528BC194F006E0DB0 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		52BDFC5F28BCC66600955361 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		52819FAB28BC0A7C006E0DB0 /* BasicSnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				52BDFC5E28BCC63900955361 /* Model */,
 				52819FE428BC163F006E0DB0 /* Delegates */,
 				52819FE328BC1617006E0DB0 /* ViewControllers */,
 				52819FB228BC0A7C006E0DB0 /* Main.storyboard */,
@@ -121,6 +124,14 @@
 				52819FAE28BC0A7C006E0DB0 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		52BDFC5E28BCC63900955361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52BDFC5F28BCC66600955361 /* UserSingleton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				52819FDC28BC10D0006E0DB0 /* SignUpVC.swift in Sources */,
 				52819FE028BC15F8006E0DB0 /* UploadVC.swift in Sources */,
+				52BDFC6028BCC66600955361 /* UserSingleton.swift in Sources */,
 				52819FE628BC194F006E0DB0 /* SnapVC.swift in Sources */,
 				52819FE228BC160B006E0DB0 /* ProfileVC.swift in Sources */,
 				52819FB128BC0A7C006E0DB0 /* SignInVC.swift in Sources */,
