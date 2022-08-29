@@ -16,7 +16,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let fireStoreDatabase = Firestore.firestore()
     var snapArray = [Snap]()
     var choosenSnap : Snap?
-    var timeLeft : Int?
     
 
     override func viewDidLoad() {
@@ -52,18 +51,17 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                                         if difference >= 24 {
                                             self.fireStoreDatabase.collection("Snaps").document(documentId).delete { error in
                                                 
-                                                
                                                 if error != nil {
                                                     self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error!")
                                                 }
                                             }
+                                        } else {
+                                            let snap = Snap(username: username, imageUrlArray: imageUrlArray, date: date.dateValue(), timeDifference: 24 - difference)
+                                            self.snapArray.append(snap)
                                         }
-                                        self.timeLeft = 24 - difference
-                                        
                                     }
                                     
-                                    let snap = Snap(username: username, imageUrlArray: imageUrlArray, date: date.dateValue())
-                                    self.snapArray.append(snap)
+                                    
                                     
                                     
                                 }
@@ -120,7 +118,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if segue.identifier == "toSnapVC" {
             let destinationVC = segue.destination as! SnapVC
             destinationVC.selectedSnap = choosenSnap
-            destinationVC.selectedTime = self.timeLeft
         }
     }
     

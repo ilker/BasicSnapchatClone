@@ -30,6 +30,9 @@
 		52819FE028BC15F8006E0DB0 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FDF28BC15F8006E0DB0 /* UploadVC.swift */; };
 		52819FE228BC160B006E0DB0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FE128BC160B006E0DB0 /* ProfileVC.swift */; };
 		52819FE628BC194F006E0DB0 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52819FE528BC194F006E0DB0 /* SnapVC.swift */; };
+		52AB76BE28BD616C00A8DBF0 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = 52AB76BD28BD616C00A8DBF0 /* ImageSlideshow */; };
+		52AB76C028BD616C00A8DBF0 /* ImageSlideshow/Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 52AB76BF28BD616C00A8DBF0 /* ImageSlideshow/Kingfisher */; };
+		52AB76C228BD616C00A8DBF0 /* ImageSlideshow/SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 52AB76C128BD616C00A8DBF0 /* ImageSlideshow/SDWebImage */; };
 		52BDFC6028BCC66600955361 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDFC5F28BCC66600955361 /* UserSingleton.swift */; };
 		52F57BCF28BD3462000D0DA5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F57BCE28BD3462000D0DA5 /* FeedCell.swift */; };
 		52F57BD128BD367D000D0DA5 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F57BD028BD367D000D0DA5 /* Snap.swift */; };
@@ -67,6 +70,7 @@
 				52F57BD628BD3A72000D0DA5 /* SDWebImageMapKit in Frameworks */,
 				52819FD228BC0C72006E0DB0 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				52819FCE28BC0C72006E0DB0 /* FirebaseAuthCombine-Community in Frameworks */,
+				52AB76C228BD616C00A8DBF0 /* ImageSlideshow/SDWebImage in Frameworks */,
 				52819FD628BC0C72006E0DB0 /* FirebaseStorage in Frameworks */,
 				52819FCC28BC0C72006E0DB0 /* FirebaseAuth in Frameworks */,
 				52F57BD428BD3A72000D0DA5 /* SDWebImage in Frameworks */,
@@ -75,6 +79,8 @@
 				52819FCA28BC0C72006E0DB0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				52819FD028BC0C72006E0DB0 /* FirebaseFirestore in Frameworks */,
 				52819FD428BC0C72006E0DB0 /* FirebaseFirestoreSwift in Frameworks */,
+				52AB76C028BD616C00A8DBF0 /* ImageSlideshow/Kingfisher in Frameworks */,
+				52AB76BE28BD616C00A8DBF0 /* ImageSlideshow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +180,9 @@
 				52819FD728BC0C72006E0DB0 /* FirebaseStorageCombine-Community */,
 				52F57BD328BD3A72000D0DA5 /* SDWebImage */,
 				52F57BD528BD3A72000D0DA5 /* SDWebImageMapKit */,
+				52AB76BD28BD616C00A8DBF0 /* ImageSlideshow */,
+				52AB76BF28BD616C00A8DBF0 /* ImageSlideshow/Kingfisher */,
+				52AB76C128BD616C00A8DBF0 /* ImageSlideshow/SDWebImage */,
 			);
 			productName = BasicSnapchatClone;
 			productReference = 52819FA928BC0A7C006E0DB0 /* BasicSnapchatClone.app */;
@@ -206,6 +215,7 @@
 			packageReferences = (
 				52819FC228BC0C72006E0DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				52F57BD228BD3A72000D0DA5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				52AB76BC28BD616C00A8DBF0 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
 			);
 			productRefGroup = 52819FAA28BC0A7C006E0DB0 /* Products */;
 			projectDirPath = "";
@@ -475,6 +485,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		52AB76BC28BD616C00A8DBF0 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		52F57BD228BD3A72000D0DA5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -540,6 +558,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52819FC228BC0C72006E0DB0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		52AB76BD28BD616C00A8DBF0 /* ImageSlideshow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52AB76BC28BD616C00A8DBF0 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow;
+		};
+		52AB76BF28BD616C00A8DBF0 /* ImageSlideshow/Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52AB76BC28BD616C00A8DBF0 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/Kingfisher;
+		};
+		52AB76C128BD616C00A8DBF0 /* ImageSlideshow/SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52AB76BC28BD616C00A8DBF0 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/SDWebImage;
 		};
 		52F57BD328BD3A72000D0DA5 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;

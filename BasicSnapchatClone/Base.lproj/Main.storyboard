@@ -293,6 +293,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hgI-HB-1d8"/>
                     <connections>
+                        <outlet property="nameLabel" destination="VoS-Av-rAp" id="vrL-fh-krR"/>
                         <outlet property="timeLabel" destination="Pfc-Jd-sBT" id="2im-xY-74m"/>
                     </connections>
                 </viewController>
